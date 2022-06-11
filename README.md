@@ -28,3 +28,4 @@ mvn clean package dockerfile:build
         "rate": 0.05
     }
     ```
+![image](https://user-images.githubusercontent.com/43045098/173175733-9588dfac-7725-4f39-87fa-5b12beac81cb.png)
