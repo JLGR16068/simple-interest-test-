@@ -1,0 +1,16 @@
+version: '3'
+
+services:
+  simple-interest:
+    image: aplazo/simple-interest-test:0.0.1-SNAPSHOT
+    ports:
+      - "8088:8088"
+    environment:
+       - "TZ=America/Mexico_City"
+    networks:
+      backend:
+        aliases:
+          - "simple-interest-test"
+
+networks:
+  backend:

@@ -1,0 +1,28 @@
+server:
+  port: 8088
+  error:
+    include-message: always
+
+spring:
+  datasource:
+    url: jdbc:h2:mem:simpleinterest
+    username: aplazo
+    password: 1yqB3N@rblzL
+    driverClassName: org.h2.Driver
+  h2:
+    console:
+      enabled: true
+      settings:
+        web-allow-others: true
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+    hibernate:
+      ddl-auto: create
+    show-sql: true
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health
+      
